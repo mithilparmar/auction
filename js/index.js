@@ -1,8 +1,10 @@
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
+      window.location.href = "http://www.w3schools.com";
     } else {
       // No user is signed in.
+      window.location.href = "../index.html";
     }
   });
 
