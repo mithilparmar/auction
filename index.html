@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            FIFA Auction
+        </title>
+        <link rel = "icon" href = "img/electronic-arts-logo.png" type = "image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styling.css">
+    </head>
+    <body>
+        <div class="content center">
+            <form>
+                <h1 style="font-size: 100px;">FIFA</h1>
+                <h2 style="font-size: 47px; margin-top: -70px;">AUCTION</h2>
+                <div class="container">
+                    <input type="email" placeholder="Email Address" name="email" required>
+                    <input type="password" placeholder="Password" name="password" required>
+                    <p style="float: right; font-size: 16px; margin-top: 5px; margin-right: 35px;"><a href="">Forgotten Password?</a></p>
+                    <button type="submit" onclick="login()"><b>Log In</b></button>
+                    <br>
+                    <br>
+                    <p style=" font-size: 16px; color: #aaaaaa;">or</p>
+                    <hr style="margin-left: 20px;">
+                    <hr style="float: right; margin-right: 20px;">
+                    <br>
+                    <br>
+                    <button type="button" class="signUpBtn"><b>Sign Up</b></button>
+                </div>
+            </form>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-analytics.js"></script>
+
+        <script>
+            var firebaseConfig = {
+                apiKey: "AIzaSyA1qedikZYzWMWH7fFmnNoNSRSGr2CU27g",
+                authDomain: "fifa-auction.firebaseapp.com",
+                databaseURL: "https://fifa-auction.firebaseio.com",
+                projectId: "fifa-auction",
+                storageBucket: "fifa-auction.appspot.com",
+                messagingSenderId: "366285181838",
+                appId: "1:366285181838:web:878b8ed9cd9d735039cadf",
+                measurementId: "G-7EJK3JT4HC"
+            };
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+        </script>
+
+        <script src="js/index.js"></script>
+
+    </body>
+</html>
